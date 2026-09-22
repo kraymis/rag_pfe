@@ -1,0 +1,542 @@
+[
+  {
+    "text": "Dans les activités de maintenance ferroviaire, le diagnostic d’une panne repose encore largement sur l’expérience des techniciens. Plusieurs défaillances peuvent produire des symptômes proches: perte intermittente de puissance, échauffement anormal, vibrations, défauts de communication ou déclenchements de protections. L’identification de la cause réelle nécessite alors de croiser les symptômes observés, l’historique des interventions et la connaissance du fonctionnement des sous-systèmes.",
+    "metadata": {
+      "source": "PFE-01_Alstom_2008",
+      "page": 1,
+      "entreprise": "Alstom",
+      "annee": 2008,
+      "reference": "PFE-01",
+      "domaine": "Maintenance ferroviaire - Diagnostic",
+      "duree": "6 mois",
+      "statut": "Sujet fictif - exercice RAG Document créé uniquement pour un exercice pédagogique. Il ne correspond pas à une offre ou à un projet réel de l’entreprise citée.",
+      "section": "contexte",
+      "chunk": 1
+    }
+  },
+  {
+    "text": "Alstom souhaite capitaliser une partie de ce savoir métier afin d’assister les équipes de maintenance lors des premières étapes du diagnostic. L’idée est de formaliser les raisonnements utilisés par les experts dans une base de connaissances exploitable par un outil informatique. Le projet ne vise pas à remplacer le technicien, mais à fournir une aide structurée permettant de réduire le temps nécessaire pour isoler les causes probables d’une panne et d’homogénéiser les pratiques de diagnostic.",
+    "metadata": {
+      "source": "PFE-01_Alstom_2008",
+      "page": 1,
+      "entreprise": "Alstom",
+      "annee": 2008,
+      "reference": "PFE-01",
+      "domaine": "Maintenance ferroviaire - Diagnostic",
+      "duree": "6 mois",
+      "statut": "Sujet fictif - exercice RAG Document créé uniquement pour un exercice pédagogique. Il ne correspond pas à une offre ou à un projet réel de l’entreprise citée.",
+      "section": "contexte",
+      "chunk": 2
+    }
+  },
+  {
+    "text": "Concevoir et prototyper un système expert capable de proposer, à partir de symptômes saisis par un technicien, une liste argumentée de causes probables et de contrôles complémentaires à effectuer. Le prototype devra rendre explicite le raisonnement suivi et permettre l’enrichissement progressif de la base de connaissances.",
+    "metadata": {
+      "source": "PFE-01_Alstom_2008",
+      "page": 1,
+      "entreprise": "Alstom",
+      "annee": 2008,
+      "reference": "PFE-01",
+      "domaine": "Maintenance ferroviaire - Diagnostic",
+      "duree": "6 mois",
+      "statut": "Sujet fictif - exercice RAG Document créé uniquement pour un exercice pédagogique. Il ne correspond pas à une offre ou à un projet réel de l’entreprise citée.",
+      "section": "objectif du projet",
+      "chunk": 1
+    }
+  },
+  {
+    "text": " fiches de pannes et comptes rendus d’intervention sur une période de trois ans;  manuels de maintenance et procédures de diagnostic;  entretiens avec plusieurs techniciens expérimentés;  liste des symptômes récurrents observés sur les sous-systèmes étudiés;  historique des opérations de contrôle réalisées avant identification de la panne.",
+    "metadata": {
+      "source": "PFE-01_Alstom_2008",
+      "page": 1,
+      "entreprise": "Alstom",
+      "annee": 2008,
+      "reference": "PFE-01",
+      "domaine": "Maintenance ferroviaire - Diagnostic",
+      "duree": "6 mois",
+      "statut": "Sujet fictif - exercice RAG Document créé uniquement pour un exercice pédagogique. Il ne correspond pas à une offre ou à un projet réel de l’entreprise citée.",
+      "section": "informations et connaissances disponibles",
+      "chunk": 1
+    }
+  },
+  {
+    "text": " sélectionner un périmètre d’équipements ferroviaires à étudier;  identifier les symptômes, causes, contrôles et relations de dépendance utiles au diagnostic;  formaliser la connaissance sous forme de faits et de règles;  concevoir une base de connaissances maintenable;  développer un moteur d’inférence permettant d’enchaîner les règles pertinentes;  proposer une interface simple pour saisir les symptômes et afficher les hypothèses de diagnostic;  tester le prototype sur un jeu de cas issus de l’historique de maintenance et analyser les erreurs.",
+    "metadata": {
+      "source": "PFE-01_Alstom_2008",
+      "page": 2,
+      "entreprise": "Alstom",
+      "annee": 2008,
+      "reference": "PFE-01",
+      "domaine": "Maintenance ferroviaire - Diagnostic",
+      "duree": "6 mois",
+      "statut": "Sujet fictif - exercice RAG Document créé uniquement pour un exercice pédagogique. Il ne correspond pas à une offre ou à un projet réel de l’entreprise citée.",
+      "section": "travaux à réaliser",
+      "chunk": 1
+    }
+  },
+  {
+    "text": "Représentation des connaissances - Les connaissances pourront être modélisées sous forme de règles conditionnelles du type « si symptômes A et B, alors vérifier C ». Certaines règles pourront être pondérées afin de distinguer les hypothèses fortes des pistes secondaires.",
+    "metadata": {
+      "source": "PFE-01_Alstom_2008",
+      "page": 2,
+      "entreprise": "Alstom",
+      "annee": 2008,
+      "reference": "PFE-01",
+      "domaine": "Maintenance ferroviaire - Diagnostic",
+      "duree": "6 mois",
+      "statut": "Sujet fictif - exercice RAG Document créé uniquement pour un exercice pédagogique. Il ne correspond pas à une offre ou à un projet réel de l’entreprise citée.",
+      "section": "approche méthodologique",
+      "chunk": 1
+    }
+  },
+  {
+    "text": "Raisonnement - Le moteur devra pouvoir partir des symptômes saisis pour explorer les règles pertinentes, demander éventuellement une information complémentaire et produire un chemin de raisonnement compréhensible par le technicien. Validation - Une vingtaine de cas historiques seront utilisés pour comparer les hypothèses proposées par le système avec les diagnostics réellement établis lors des interventions.",
+    "metadata": {
+      "source": "PFE-01_Alstom_2008",
+      "page": 2,
+      "entreprise": "Alstom",
+      "annee": 2008,
+      "reference": "PFE-01",
+      "domaine": "Maintenance ferroviaire - Diagnostic",
+      "duree": "6 mois",
+      "statut": "Sujet fictif - exercice RAG Document créé uniquement pour un exercice pédagogique. Il ne correspond pas à une offre ou à un projet réel de l’entreprise citée.",
+      "section": "approche méthodologique",
+      "chunk": 2
+    }
+  },
+  {
+    "text": " un prototype de système expert fonctionnel;  une base de connaissances documentée;  un ensemble de cas de test et une analyse des résultats;  une documentation expliquant comment ajouter de nouvelles règles et de nouveaux cas de panne.",
+    "metadata": {
+      "source": "PFE-01_Alstom_2008",
+      "page": 2,
+      "entreprise": "Alstom",
+      "annee": 2008,
+      "reference": "PFE-01",
+      "domaine": "Maintenance ferroviaire - Diagnostic",
+      "duree": "6 mois",
+      "statut": "Sujet fictif - exercice RAG Document créé uniquement pour un exercice pédagogique. Il ne correspond pas à une offre ou à un projet réel de l’entreprise citée.",
+      "section": "résultats attendus",
+      "chunk": 1
+    }
+  },
+  {
+    "text": "Systèmes experts, base de connaissances, moteur d’inférence, diagnostic, maintenance ferroviaire, règles métier, SQL, Python.",
+    "metadata": {
+      "source": "PFE-01_Alstom_2008",
+      "page": 2,
+      "entreprise": "Alstom",
+      "annee": 2008,
+      "reference": "PFE-01",
+      "domaine": "Maintenance ferroviaire - Diagnostic",
+      "duree": "6 mois",
+      "statut": "Sujet fictif - exercice RAG Document créé uniquement pour un exercice pédagogique. Il ne correspond pas à une offre ou à un projet réel de l’entreprise citée.",
+      "section": "mots-clés",
+      "chunk": 1
+    }
+  },
+  {
+    "text": "Les équipements ferroviaires modernes produisent de nombreuses mesures pendant leur fonctionnement: température, vibration, courant, tension, vitesse et états de fonctionnement. Ces données sont utilisées pour la supervision opérationnelle, mais leur historique peut également contenir des signaux faibles précédant certaines défaillances.",
+    "metadata": {
+      "source": "PFE-02_Alstom_2017",
+      "page": 1,
+      "entreprise": "Alstom",
+      "annee": 2017,
+      "reference": "PFE-02",
+      "domaine": "Data Analytics - Maintenance prédictive",
+      "duree": "6 mois",
+      "statut": "Sujet fictif - exercice RAG Document créé uniquement pour un exercice pédagogique. Il ne correspond pas à une offre ou à un projet réel de l’entreprise citée.",
+      "section": "contexte",
+      "chunk": 1
+    }
+  },
+  {
+    "text": "Alstom souhaite étudier l’utilisation de ces historiques afin de passer d’une maintenance principalement préventive ou corrective vers une approche davantage prédictive. Le projet portera sur un sous-ensemble d’équipements pour lesquels des données capteurs et un historique d’interventions sont disponibles. L’enjeu principal est de déterminer si certains comportements mesurés permettent d’anticiper une dégradation suffisamment tôt pour planifier une inspection ou une opération de maintenance.",
+    "metadata": {
+      "source": "PFE-02_Alstom_2017",
+      "page": 1,
+      "entreprise": "Alstom",
+      "annee": 2017,
+      "reference": "PFE-02",
+      "domaine": "Data Analytics - Maintenance prédictive",
+      "duree": "6 mois",
+      "statut": "Sujet fictif - exercice RAG Document créé uniquement pour un exercice pédagogique. Il ne correspond pas à une offre ou à un projet réel de l’entreprise citée.",
+      "section": "contexte",
+      "chunk": 2
+    }
+  },
+  {
+    "text": "Développer une preuve de concept permettant d’estimer le risque de défaillance d’un équipement à partir de ses données historiques et d’identifier les variables les plus utiles à cette prédiction. Le travail devra également analyser les compromis entre détection précoce, faux positifs et coût opérationnel des alertes.",
+    "metadata": {
+      "source": "PFE-02_Alstom_2017",
+      "page": 1,
+      "entreprise": "Alstom",
+      "annee": 2017,
+      "reference": "PFE-02",
+      "domaine": "Data Analytics - Maintenance prédictive",
+      "duree": "6 mois",
+      "statut": "Sujet fictif - exercice RAG Document créé uniquement pour un exercice pédagogique. Il ne correspond pas à une offre ou à un projet réel de l’entreprise citée.",
+      "section": "objectif du projet",
+      "chunk": 1
+    }
+  },
+  {
+    "text": " mesures temporelles issues de capteurs de température, vibration et courant;  états de fonctionnement et événements enregistrés par les équipements;  dates et types d’interventions de maintenance;  catégories de pannes constatées;  informations de contexte telles que durée d’utilisation ou conditions d’exploitation lorsque disponibles.",
+    "metadata": {
+      "source": "PFE-02_Alstom_2017",
+      "page": 1,
+      "entreprise": "Alstom",
+      "annee": 2017,
+      "reference": "PFE-02",
+      "domaine": "Data Analytics - Maintenance prédictive",
+      "duree": "6 mois",
+      "statut": "Sujet fictif - exercice RAG Document créé uniquement pour un exercice pédagogique. Il ne correspond pas à une offre ou à un projet réel de l’entreprise citée.",
+      "section": "données disponibles",
+      "chunk": 1
+    }
+  },
+  {
+    "text": " construire un jeu de données exploitable à partir des historiques bruts;  analyser la qualité, les valeurs manquantes et les dérives de capteurs;  explorer les séries temporelles et rechercher des comportements précédant les pannes;  créer des variables agrégées sur différentes fenêtres temporelles;  comparer plusieurs approches de classification et de détection d’anomalies;  évaluer les modèles avec des métriques adaptées au déséquilibre entre cas normaux et cas de panne;  proposer une visualisation simple du niveau de risque et des principaux facteurs associés.",
+    "metadata": {
+      "source": "PFE-02_Alstom_2017",
+      "page": 2,
+      "entreprise": "Alstom",
+      "annee": 2017,
+      "reference": "PFE-02",
+      "domaine": "Data Analytics - Maintenance prédictive",
+      "duree": "6 mois",
+      "statut": "Sujet fictif - exercice RAG Document créé uniquement pour un exercice pédagogique. Il ne correspond pas à une offre ou à un projet réel de l’entreprise citée.",
+      "section": "travaux à réaliser",
+      "chunk": 1
+    }
+  },
+  {
+    "text": "Préparation des données - Les mesures seront resynchronisées et agrégées afin de construire, pour chaque équipement et chaque période, un ensemble cohérent de variables décrivant son état. Modélisation - Des modèles tels que régression logistique, arbres de décision, Random Forest ou Gradient Boosting pourront être comparés. Une approche de détection d’anomalies pourra être étudiée lorsque le nombre de pannes annotées est insuffisant.",
+    "metadata": {
+      "source": "PFE-02_Alstom_2017",
+      "page": 2,
+      "entreprise": "Alstom",
+      "annee": 2017,
+      "reference": "PFE-02",
+      "domaine": "Data Analytics - Maintenance prédictive",
+      "duree": "6 mois",
+      "statut": "Sujet fictif - exercice RAG Document créé uniquement pour un exercice pédagogique. Il ne correspond pas à une offre ou à un projet réel de l’entreprise citée.",
+      "section": "approche méthodologique",
+      "chunk": 1
+    }
+  },
+  {
+    "text": "Évaluation - La précision, le rappel, le F1-score et surtout le nombre de fausses alertes seront analysés. Une validation temporelle sera privilégiée afin d’éviter d’utiliser des informations du futur lors de l’apprentissage.",
+    "metadata": {
+      "source": "PFE-02_Alstom_2017",
+      "page": 2,
+      "entreprise": "Alstom",
+      "annee": 2017,
+      "reference": "PFE-02",
+      "domaine": "Data Analytics - Maintenance prédictive",
+      "duree": "6 mois",
+      "statut": "Sujet fictif - exercice RAG Document créé uniquement pour un exercice pédagogique. Il ne correspond pas à une offre ou à un projet réel de l’entreprise citée.",
+      "section": "approche méthodologique",
+      "chunk": 2
+    }
+  },
+  {
+    "text": " un pipeline de préparation des données;  un ou plusieurs modèles comparés sur un protocole d’évaluation clair;  une analyse des variables influençant le risque de panne;  un prototype de visualisation permettant de suivre le risque estimé pour les équipements étudiés.",
+    "metadata": {
+      "source": "PFE-02_Alstom_2017",
+      "page": 2,
+      "entreprise": "Alstom",
+      "annee": 2017,
+      "reference": "PFE-02",
+      "domaine": "Data Analytics - Maintenance prédictive",
+      "duree": "6 mois",
+      "statut": "Sujet fictif - exercice RAG Document créé uniquement pour un exercice pédagogique. Il ne correspond pas à une offre ou à un projet réel de l’entreprise citée.",
+      "section": "résultats attendus",
+      "chunk": 1
+    }
+  },
+  {
+    "text": "Maintenance prédictive, Machine Learning, séries temporelles, capteurs, classification, détection d’anomalies, Python, pandas.",
+    "metadata": {
+      "source": "PFE-02_Alstom_2017",
+      "page": 2,
+      "entreprise": "Alstom",
+      "annee": 2017,
+      "reference": "PFE-02",
+      "domaine": "Data Analytics - Maintenance prédictive",
+      "duree": "6 mois",
+      "statut": "Sujet fictif - exercice RAG Document créé uniquement pour un exercice pédagogique. Il ne correspond pas à une offre ou à un projet réel de l’entreprise citée.",
+      "section": "mots-clés",
+      "chunk": 1
+    }
+  },
+  {
+    "text": "Le contrôle visuel de pièces aéronautiques constitue une étape importante du processus qualité. Certaines anomalies de surface sont recherchées à partir d’images prises dans des conditions contrôlées, mais l’inspection manuelle reste coûteuse et dépend de l’expérience de l’opérateur. Lorsque les défauts sont petits ou peu contrastés, le temps d’analyse peut augmenter et la reproductibilité du contrôle peut diminuer.",
+    "metadata": {
+      "source": "PFE-03_Airbus_2021",
+      "page": 1,
+      "entreprise": "Airbus",
+      "annee": 2021,
+      "reference": "PFE-03",
+      "domaine": "Computer Vision - Contrôle qualité",
+      "duree": "6 mois",
+      "statut": "Sujet fictif - exercice RAG Document créé uniquement pour un exercice pédagogique. Il ne correspond pas à une offre ou à un projet réel de l’entreprise citée.",
+      "section": "contexte",
+      "chunk": 1
+    }
+  },
+  {
+    "text": "Airbus souhaite évaluer la faisabilité d’un système d’aide au contrôle capable de détecter automatiquement plusieurs familles de défauts visibles sur les images. Le projet se concentrera sur un jeu de données historique comprenant des pièces conformes et des pièces présentant des défauts annotés par des experts qualité.",
+    "metadata": {
+      "source": "PFE-03_Airbus_2021",
+      "page": 1,
+      "entreprise": "Airbus",
+      "annee": 2021,
+      "reference": "PFE-03",
+      "domaine": "Computer Vision - Contrôle qualité",
+      "duree": "6 mois",
+      "statut": "Sujet fictif - exercice RAG Document créé uniquement pour un exercice pédagogique. Il ne correspond pas à une offre ou à un projet réel de l’entreprise citée.",
+      "section": "contexte",
+      "chunk": 2
+    }
+  },
+  {
+    "text": "Développer et évaluer un prototype de vision artificielle capable d’identifier la présence de défauts sur une image et, lorsque les données le permettent, de distinguer plusieurs catégories d’anomalies. Le système devra être analysé sous l’angle de la performance mais également de la robustesse aux variations d’éclairage, d’orientation et de qualité des images.",
+    "metadata": {
+      "source": "PFE-03_Airbus_2021",
+      "page": 1,
+      "entreprise": "Airbus",
+      "annee": 2021,
+      "reference": "PFE-03",
+      "domaine": "Computer Vision - Contrôle qualité",
+      "duree": "6 mois",
+      "statut": "Sujet fictif - exercice RAG Document créé uniquement pour un exercice pédagogique. Il ne correspond pas à une offre ou à un projet réel de l’entreprise citée.",
+      "section": "objectif du projet",
+      "chunk": 1
+    }
+  },
+  {
+    "text": " images de pièces conformes et non conformes;  annotations indiquant la classe de défaut pour une partie des images;  exemples de rayures, fissures, défauts de surface et anomalies d’assemblage;  métadonnées liées aux conditions de prise de vue lorsque disponibles.",
+    "metadata": {
+      "source": "PFE-03_Airbus_2021",
+      "page": 1,
+      "entreprise": "Airbus",
+      "annee": 2021,
+      "reference": "PFE-03",
+      "domaine": "Computer Vision - Contrôle qualité",
+      "duree": "6 mois",
+      "statut": "Sujet fictif - exercice RAG Document créé uniquement pour un exercice pédagogique. Il ne correspond pas à une offre ou à un projet réel de l’entreprise citée.",
+      "section": "jeu de données",
+      "chunk": 1
+    }
+  },
+  {
+    "text": " explorer et nettoyer le jeu d’images;  analyser le déséquilibre entre classes et la qualité des annotations;  mettre en place un pipeline de prétraitement et d’augmentation de données;  développer une première baseline de classification;  étudier un réseau de neurones convolutifs et une approche de transfer learning;  comparer plusieurs métriques de performance et analyser les erreurs;  proposer une interface de démonstration affichant la prédiction et le niveau de confiance.",
+    "metadata": {
+      "source": "PFE-03_Airbus_2021",
+      "page": 2,
+      "entreprise": "Airbus",
+      "annee": 2021,
+      "reference": "PFE-03",
+      "domaine": "Computer Vision - Contrôle qualité",
+      "duree": "6 mois",
+      "statut": "Sujet fictif - exercice RAG Document créé uniquement pour un exercice pédagogique. Il ne correspond pas à une offre ou à un projet réel de l’entreprise citée.",
+      "section": "travaux à réaliser",
+      "chunk": 1
+    }
+  },
+  {
+    "text": "Baseline - Une première approche simple sera utilisée comme référence afin de mesurer l’apport des modèles plus complexes. Deep Learning - Des architectures convolutionnelles pré-entraînées pourront être adaptées au jeu de données par transfer learning. L’objectif n’est pas seulement d’atteindre un bon score moyen, mais de comprendre les catégories de défauts qui restent difficiles à détecter. Analyse d’erreurs - Les faux négatifs seront étudiés en priorité pour les défauts critiques.",
+    "metadata": {
+      "source": "PFE-03_Airbus_2021",
+      "page": 2,
+      "entreprise": "Airbus",
+      "annee": 2021,
+      "reference": "PFE-03",
+      "domaine": "Computer Vision - Contrôle qualité",
+      "duree": "6 mois",
+      "statut": "Sujet fictif - exercice RAG Document créé uniquement pour un exercice pédagogique. Il ne correspond pas à une offre ou à un projet réel de l’entreprise citée.",
+      "section": "approche méthodologique",
+      "chunk": 1
+    }
+  },
+  {
+    "text": "Analyse d’erreurs - Les faux négatifs seront étudiés en priorité pour les défauts critiques. Les performances seront comparées entre plusieurs conditions de prise de vue afin d’identifier les limites de généralisation du prototype.",
+    "metadata": {
+      "source": "PFE-03_Airbus_2021",
+      "page": 2,
+      "entreprise": "Airbus",
+      "annee": 2021,
+      "reference": "PFE-03",
+      "domaine": "Computer Vision - Contrôle qualité",
+      "duree": "6 mois",
+      "statut": "Sujet fictif - exercice RAG Document créé uniquement pour un exercice pédagogique. Il ne correspond pas à une offre ou à un projet réel de l’entreprise citée.",
+      "section": "approche méthodologique",
+      "chunk": 2
+    }
+  },
+  {
+    "text": " un jeu de données préparé et documenté;  une baseline et au moins un modèle Deep Learning évalués de manière reproductible;  une analyse détaillée des faux positifs et faux négatifs;  un prototype de démonstration pour l’analyse d’une image.",
+    "metadata": {
+      "source": "PFE-03_Airbus_2021",
+      "page": 2,
+      "entreprise": "Airbus",
+      "annee": 2021,
+      "reference": "PFE-03",
+      "domaine": "Computer Vision - Contrôle qualité",
+      "duree": "6 mois",
+      "statut": "Sujet fictif - exercice RAG Document créé uniquement pour un exercice pédagogique. Il ne correspond pas à une offre ou à un projet réel de l’entreprise citée.",
+      "section": "résultats attendus",
+      "chunk": 1
+    }
+  },
+  {
+    "text": "Computer Vision, Deep Learning, CNN, transfer learning, contrôle qualité, classification d’images, Python.",
+    "metadata": {
+      "source": "PFE-03_Airbus_2021",
+      "page": 2,
+      "entreprise": "Airbus",
+      "annee": 2021,
+      "reference": "PFE-03",
+      "domaine": "Computer Vision - Contrôle qualité",
+      "duree": "6 mois",
+      "statut": "Sujet fictif - exercice RAG Document créé uniquement pour un exercice pédagogique. Il ne correspond pas à une offre ou à un projet réel de l’entreprise citée.",
+      "section": "mots-clés",
+      "chunk": 1
+    }
+  },
+  {
+    "text": "Les équipes techniques disposent d’un volume important de documentation: manuels de réparation, procédures de diagnostic, notes techniques, comptes rendus d’intervention et guides de maintenance. Ces informations sont réparties dans de nombreux documents, souvent longs, et leur consultation nécessite de connaître le bon document ainsi que le vocabulaire utilisé par les rédacteurs.",
+    "metadata": {
+      "source": "PFE-04_Renault_2025",
+      "page": 1,
+      "entreprise": "Renault",
+      "annee": 2025,
+      "reference": "PFE-04",
+      "domaine": "Generative AI - Recherche documentaire",
+      "duree": "6 mois",
+      "statut": "Sujet fictif - exercice RAG Document créé uniquement pour un exercice pédagogique. Il ne correspond pas à une offre ou à un projet réel de l’entreprise citée.",
+      "section": "contexte",
+      "chunk": 1
+    }
+  },
+  {
+    "text": "Renault souhaite expérimenter une interface conversationnelle permettant à un utilisateur de poser une question en langage naturel et d’obtenir une réponse fondée sur la documentation interne. Le système devra privilégier la traçabilité: une réponse ne devra pas seulement être fluide, elle devra permettre à l’utilisateur de retrouver les passages ayant servi à la générer.",
+    "metadata": {
+      "source": "PFE-04_Renault_2025",
+      "page": 1,
+      "entreprise": "Renault",
+      "annee": 2025,
+      "reference": "PFE-04",
+      "domaine": "Generative AI - Recherche documentaire",
+      "duree": "6 mois",
+      "statut": "Sujet fictif - exercice RAG Document créé uniquement pour un exercice pédagogique. Il ne correspond pas à une offre ou à un projet réel de l’entreprise citée.",
+      "section": "contexte",
+      "chunk": 2
+    }
+  },
+  {
+    "text": "Développer un prototype d’assistant documentaire basé sur une architecture Retrieval-Augmented Generation (RAG). Le prototype devra indexer un corpus de documents techniques, retrouver les passages pertinents pour une question, générer une réponse à partir de ces passages et afficher les sources associées.",
+    "metadata": {
+      "source": "PFE-04_Renault_2025",
+      "page": 1,
+      "entreprise": "Renault",
+      "annee": 2025,
+      "reference": "PFE-04",
+      "domaine": "Generative AI - Recherche documentaire",
+      "duree": "6 mois",
+      "statut": "Sujet fictif - exercice RAG Document créé uniquement pour un exercice pédagogique. Il ne correspond pas à une offre ou à un projet réel de l’entreprise citée.",
+      "section": "objectif du projet",
+      "chunk": 1
+    }
+  },
+  {
+    "text": " manuels de maintenance au format PDF;  procédures de diagnostic et fiches de contrôle;  notes techniques portant sur plusieurs familles de composants;  documents de longueurs et de structures différentes, avec titres, tableaux et paragraphes techniques.",
+    "metadata": {
+      "source": "PFE-04_Renault_2025",
+      "page": 1,
+      "entreprise": "Renault",
+      "annee": 2025,
+      "reference": "PFE-04",
+      "domaine": "Generative AI - Recherche documentaire",
+      "duree": "6 mois",
+      "statut": "Sujet fictif - exercice RAG Document créé uniquement pour un exercice pédagogique. Il ne correspond pas à une offre ou à un projet réel de l’entreprise citée.",
+      "section": "corpus documentaire",
+      "chunk": 1
+    }
+  },
+  {
+    "text": " extraire et nettoyer le texte des documents;  définir une stratégie de découpage des documents en segments;  générer des embeddings pour représenter les segments;  mettre en place un index vectoriel et une recherche par similarité;  construire le contexte envoyé au Large Language Model;  concevoir un prompt demandant au modèle de répondre uniquement à partir du contexte fourni;  afficher les documents ou passages utilisés comme sources;  constituer un jeu de questions et analyser séparément les erreurs de retrieval et les erreurs de génération.",
+    "metadata": {
+      "source": "PFE-04_Renault_2025",
+      "page": 2,
+      "entreprise": "Renault",
+      "annee": 2025,
+      "reference": "PFE-04",
+      "domaine": "Generative AI - Recherche documentaire",
+      "duree": "6 mois",
+      "statut": "Sujet fictif - exercice RAG Document créé uniquement pour un exercice pédagogique. Il ne correspond pas à une offre ou à un projet réel de l’entreprise citée.",
+      "section": "travaux à réaliser",
+      "chunk": 1
+    }
+  },
+  {
+    "text": "Indexation - Les documents seront découpés en chunks avant calcul des embeddings. Plusieurs tailles de chunks et niveaux de chevauchement pourront être comparés afin d’étudier leur effet sur la qualité du retrieval. Retrieval - Pour chaque question, le système recherchera les segments les plus proches dans l’espace vectoriel. Le nombre de passages retournés (Top-K) devra être configurable pour permettre des expérimentations.",
+    "metadata": {
+      "source": "PFE-04_Renault_2025",
+      "page": 2,
+      "entreprise": "Renault",
+      "annee": 2025,
+      "reference": "PFE-04",
+      "domaine": "Generative AI - Recherche documentaire",
+      "duree": "6 mois",
+      "statut": "Sujet fictif - exercice RAG Document créé uniquement pour un exercice pédagogique. Il ne correspond pas à une offre ou à un projet réel de l’entreprise citée.",
+      "section": "approche méthodologique",
+      "chunk": 1
+    }
+  },
+  {
+    "text": "Le nombre de passages retournés (Top-K) devra être configurable pour permettre des expérimentations. Génération et évaluation - Le LLM recevra uniquement la question et les passages récupérés. L’évaluation devra distinguer la pertinence des passages retrouvés de la fidélité de la réponse finale aux sources.",
+    "metadata": {
+      "source": "PFE-04_Renault_2025",
+      "page": 2,
+      "entreprise": "Renault",
+      "annee": 2025,
+      "reference": "PFE-04",
+      "domaine": "Generative AI - Recherche documentaire",
+      "duree": "6 mois",
+      "statut": "Sujet fictif - exercice RAG Document créé uniquement pour un exercice pédagogique. Il ne correspond pas à une offre ou à un projet réel de l’entreprise citée.",
+      "section": "approche méthodologique",
+      "chunk": 2
+    }
+  },
+  {
+    "text": " un pipeline d’ingestion de documents;  un index vectoriel permettant la recherche sémantique;  une interface conversationnelle simple;  l’affichage des sources associées aux réponses;  un jeu de questions de test et une analyse des principales limites du prototype.",
+    "metadata": {
+      "source": "PFE-04_Renault_2025",
+      "page": 2,
+      "entreprise": "Renault",
+      "annee": 2025,
+      "reference": "PFE-04",
+      "domaine": "Generative AI - Recherche documentaire",
+      "duree": "6 mois",
+      "statut": "Sujet fictif - exercice RAG Document créé uniquement pour un exercice pédagogique. Il ne correspond pas à une offre ou à un projet réel de l’entreprise citée.",
+      "section": "résultats attendus",
+      "chunk": 1
+    }
+  },
+  {
+    "text": "Generative AI, LLM, RAG, embeddings, recherche sémantique, vector database, NLP, Python.",
+    "metadata": {
+      "source": "PFE-04_Renault_2025",
+      "page": 2,
+      "entreprise": "Renault",
+      "annee": 2025,
+      "reference": "PFE-04",
+      "domaine": "Generative AI - Recherche documentaire",
+      "duree": "6 mois",
+      "statut": "Sujet fictif - exercice RAG Document créé uniquement pour un exercice pédagogique. Il ne correspond pas à une offre ou à un projet réel de l’entreprise citée.",
+      "section": "mots-clés",
+      "chunk": 1
+    }
+  }
+]
